@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="choi()">Chơi</button>
+<script>
+    let i = 0;
+
+    function choi() {
+        let x = parseInt(prompt('Nhập số: '));
+        let y = parseInt(prompt('Nhập số: '));
+        if (x < y) {
+            i = Math.floor(Math.random() * (y - x)) + x;
+        } else {
+            alert('Nhập số thứ nhất nhỏ hơn số thứ 2');
+        }
+        let z = prompt('Nhập số bạn dự đoán: ');
+        if (z == i) {
+            alert('Bạn đã đúng');
+        } else if (z != i) {
+            let a = prompt('Nhập số bạn dự đoán: ');
+            if (a == i) {
+                alert('Bạn đã đúng');
+            }else if (a!=i){
+                let b = prompt('Nhập số bạn dự đoán: ');
+                if (b==i){
+                    alert('Bạn đã đúng');
+                }else {
+                    alert('Sai,Click để chơi lại');
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo_1"></div>
+<div id="demo"></div>
+<script>
+  let a=1;
+  let b = 0;
+  let z=0;
+  let j = 0;
+for (let i=0;i< 20;i++) {
+    z=a+b;
+    document.write(z + "<br />")
+    j += z;
+    a=b;
+    b=z;
+}
+document.write(j+ "<br>")
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x=1;
+  for (let i =1;i <101;i++){
+    x=i;
+    if (x%3===0) {
+      document.write("Fizz"+ ' ');
+    }
+    else if (x%3===0 && x%5===0) {
+      document.write("FizzBuzz"+ ' ');
+    }
+    else if (x%5===0) {
+      document.write("Buzz" + ' ');
+    }
+    else {
+      document.write(x + ' ');
+    }
+  }
+</script>
+</body>
+</html>
